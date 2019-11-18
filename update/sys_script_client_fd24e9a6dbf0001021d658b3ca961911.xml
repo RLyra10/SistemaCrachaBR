@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>ca_chave</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Chave OnChange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	g_form.clearMessages();
+	
+	if (isLoading || newValue === '') {
+		return;
+	}
+	if (oldValue == newValue){
+		return;
+	}
+	
+	var ga = new GlideAjax('Funcoes_Gerais');
+	ga.addParam('sysparm_chave', newValue);
+	ga.addParam('sysparm_name', 'getDadosChave');
+
+	ga.getXML(getResponse);
+	return;
+
+function getResponse(response) {
+
+	var jsonObj = response.responseXML.documentElement.getAttribute('answer');
+	var obj = JSON.parse(jsonObj);
+	
+	g_form.setValue('ca_gerencia', obj.orgao.sigla);
+	g_form.setValue('ca_cargo', obj.descricaoCargoPetrobrasR3);
+	g_form.setValue('ca_matricula', obj.matricula);
+	g_form.setValue('ca_nome_completo', obj.nomeCompleto);
+	g_form.setValue('ca_lotacao', obj.hierarquiaCompleta);
+	g_form.setValue('ca_funcao', obj.descricaoCargoR3);
+	g_form.setValue('ca_nome_gerente', obj.nomeCompletoSuperior);
+	
+	var admissao = obj.ingresso;
+	admissao = admissao.split("T")[0];
+	admissao = admissao.split("-")[2] +'/'+ admissao.split("-")[1] +'/'+ admissao.split("-")[0];
+	g_form.setValue('ca_admissao', admissao);	
+	
+	// campos ocultos
+	g_form.setValue('ca_chave_gerente', obj.chaveSuperior);
+	
+	
+	//var values = response.responseXML.documentElement.getAttribute('answer').toString().split('#');
+	
+//	g_form.setValue('ca_matricula', values[0]);
+//	g_form.setValue('ca_nome_completo', values[1]);
+	
+}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-01 19:47:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd24e9a6dbf0001021d658b3ca961911</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>Chave OnChange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+        <sys_update_name>sys_script_client_fd24e9a6dbf0001021d658b3ca961911</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-11 17:04:22</sys_updated_on>
+        <table>x_407528_crachas_siscracha_table</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

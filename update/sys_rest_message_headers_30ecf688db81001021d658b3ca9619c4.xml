@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers">
+    <sys_rest_message_headers action="INSERT_OR_UPDATE">
+        <name>Ocp-Apim-Subscription-Key</name>
+        <rest_message display_value="CargaAPIChave">c4ec3a88db81001021d658b3ca9619de</rest_message>
+        <sys_class_name>sys_rest_message_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-06 17:49:36</sys_created_on>
+        <sys_id>30ecf688db81001021d658b3ca9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ocp-Apim-Subscription-Key</sys_name>
+        <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+        <sys_update_name>sys_rest_message_headers_30ecf688db81001021d658b3ca9619c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 17:49:36</sys_updated_on>
+        <value>5927e37a4721497c8774231c9eee8bc7</value>
+    </sys_rest_message_headers>
+</record_update>

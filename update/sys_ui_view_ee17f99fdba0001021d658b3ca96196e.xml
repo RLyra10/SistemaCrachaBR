@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>lixeira_diaria</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-22 18:30:27</sys_created_on>
+        <sys_id>ee17f99fdba0001021d658b3ca96196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lixeira Diaria</sys_name>
+        <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+        <sys_update_name>sys_ui_view_ee17f99fdba0001021d658b3ca96196e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-22 18:30:27</sys_updated_on>
+        <title>Lixeira Diaria</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

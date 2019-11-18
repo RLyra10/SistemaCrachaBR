@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="ca_motivo" table="x_407528_crachas_siscracha_table" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ca_motivo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>&lt;Selecione um item&gt;</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 13:37:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>66878025db10001021d658b3ca961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 13:37:59</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ca_motivo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Admissão</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 13:37:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6878025db10001021d658b3ca961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 13:37:59</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ca_motivo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dados de Identificação</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 13:37:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>76878025db10001021d658b3ca961985</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 13:37:59</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ca_motivo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mudança de Fotografia</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 13:37:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f2878025db10001021d658b3ca961986</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 13:37:59</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ca_motivo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Perda do Crachá</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 13:37:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>72878025db10001021d658b3ca961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 13:37:59</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ca_motivo</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Substituição por Dano</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 13:37:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fe878025db10001021d658b3ca961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 13:37:59</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>ca_motivo</element>
+            <name>x_407528_crachas_siscracha_table</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 13:37:59</sys_created_on>
+            <sys_id>ee878025db10001021d658b3ca961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ca_motivo</sys_name>
+            <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+            <sys_update_name>sys_choice_x_407528_crachas_siscracha_table_ca_motivo</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 13:37:59</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

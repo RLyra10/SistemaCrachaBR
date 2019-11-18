@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Sistema de Crachás Table" max_length="40" name="x_407528_crachas_siscracha_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Admissão:" max_length="40" name="ca_admissao" read_only="true" type="string"/>
+        <element label="Anexo" max_length="40" name="ca_anexo" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="De acordo com o termo acima?" mandatory="true" max_length="40" name="ca_aprova_termo" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Concordo" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Não Concordo" sequence="1" value="0"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Cargo:" max_length="40" name="ca_cargo" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Chave:" max_length="4" name="ca_chave" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Chave Gerente" max_length="40" name="ca_chave_gerente" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Data de Emissão:" max_length="40" name="ca_dataemissao" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="Documento Ativo" max_length="40" name="ca_doc_ativo" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Sim" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Não" sequence="1" value="0"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Função:" max_length="40" name="ca_funcao" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Gerência:" max_length="40" name="ca_gerencia" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Histórico:" max_length="200" name="ca_historico" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Identidade:" max_length="40" name="ca_identidade" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Log" max_length="100000" name="ca_log" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Lotação:" max_length="40" name="ca_lotacao" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Matrícula:" max_length="40" name="ca_matricula" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="Motivo:" max_length="40" name="ca_motivo" type="string">
+            <choice>
+                <element inactive_on_update="false" label="&lt;Selecione um item&gt;" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Admissão" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Dados de Identificação" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Mudança de Fotografia" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Perda do Crachá" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Substituição por Dano" sequence="5" value="6"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Nome Completo:" max_length="40" name="ca_nome_completo" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nome no Crachá:" max_length="40" name="ca_nome_cracha" type="string"/>
+        <element label="Gerente" max_length="80" name="ca_nome_gerente" read_only="true" type="field_name"/>
+        <element label="Substituto" max_length="80" name="ca_nome_substituto" read_only="true" type="field_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Número:" max_length="40" name="ca_numero" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Órgão Emissor:" max_length="40" name="ca_orgaoemissor" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Ramal:" max_length="40" name="ca_ramal" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SAD:" max_length="40" name="ca_sad" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="Status" max_length="40" name="ca_status" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Em Construção" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="Nova Solicitação" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Em Emissão" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Entregue ao Empregado" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Reprovada" sequence="4" value="9"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="TERMO DE COMPROMISSO" label="&gt;" max_length="40" name="ca_termo_compromisso" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="UF:" max_length="40" name="ca_ufidentidade" type="string"/>
+        <element attributes="base_start=true" label="Termo de Compromisso" max_length="80" name="u_table_name_29" read_only="true" type="table_name"/>
+    </element>
+</database>

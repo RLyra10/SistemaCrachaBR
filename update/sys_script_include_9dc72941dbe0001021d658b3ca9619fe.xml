@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_407528_crachas.Gerar_NumeracaoDoc</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Gerar_NumeracaoDoc</name>
+        <script><![CDATA[var Gerar_NumeracaoDoc = Class.create();
+Gerar_NumeracaoDoc.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+   getNumeracao: function() {
+
+   var numero = 0;
+   var gDate = new GlideDate();
+   var ano = gDate.getYearNoTZ();
+   ////// pegando as colunas da tabela
+   var numeracao = new GlideRecord('x_407528_crachas_tabela_de_numera_o');
+   numeracao.addQuery('ca_ano', ano);
+   numeracao.query();
+
+   if (numeracao.getRowCount() > 0) {
+	   while (numeracao.next()) {
+		   numero = numeracao.getValue('ca_numero');
+           numero = Number(numero) + 1;
+           numeracao.ca_numero = numero;
+           numeracao.update();
+       }
+
+   } else {
+            //    ///// criando a numeração
+
+            numeracao.initialize();
+            numeracao.ca_numero = 1;
+            numeracao.ca_ano = ano;
+            numeracao.insert();
+            numero = 1;
+
+        }
+        numero = ("0000" + numero).slice(-4);
+        var novoNumero = numero + ano;
+        var formatted = novoNumero.replace(/^(\d{4})(\d{4}).*/, '$1/$2');
+        novoNumero = formatted;
+        return novoNumero;
+
+    },
+    type: 'Gerar_NumeracaoDoc'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-15 17:38:30</sys_created_on>
+        <sys_id>9dc72941dbe0001021d658b3ca9619fe</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Gerar_NumeracaoDoc</sys_name>
+        <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+        <sys_update_name>sys_script_include_9dc72941dbe0001021d658b3ca9619fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-06 18:50:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

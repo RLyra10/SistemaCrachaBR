@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ca_numero" label="Número:" language="en" table="x_407528_crachas_siscracha_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ca_numero</element>
+            <help/>
+            <hint/>
+            <label>Número:</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <plural>Número:s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 14:06:14</sys_created_on>
+            <sys_id>e40ecce5db10001021d658b3ca96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Número:</sys_name>
+            <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+            <sys_update_name>sys_documentation_x_407528_crachas_siscracha_table_ca_numero_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 14:06:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

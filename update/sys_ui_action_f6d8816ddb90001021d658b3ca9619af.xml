@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>Solicitar Crachá</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style>primary</list_style>
+        <name>Solicitar Crachá</name>
+        <onclick>Salvar()</onclick>
+        <order>100</order>
+        <script><![CDATA[function Salvar(){
+	g_form.clearMessages();
+
+	var auxChave = g_form.getValue('ca_chave');
+	if (auxChave == ''){
+		g_form.addErrorMessage('Informe a Chave do usuário.');
+		g_form.flash("x_407528_crachas_siscracha_table.ca_chave", "#FFDADC", -4);
+		return;
+	}
+	var auxNome = g_form.getValue('ca_nome_cracha');
+	if (auxNome == ''){
+		g_form.addErrorMessage('Informe nome que ficará no crachá.');
+		g_form.flash("x_407528_crachas_siscracha_table.ca_nome_cracha", "#FFDADC", -4);
+		return;
+	}
+	var auxMotivo = g_form.getValue('ca_motivo');
+	if (auxMotivo == '1'){
+		g_form.addErrorMessage('Informe o Motivo da solicitação.');
+		g_form.flash("x_407528_crachas_siscracha_table.ca_motivo", "#FFDADC", -4);
+		return;
+	}
+
+	var aux = g_form.getValue('ca_aprova_termo');
+	if (aux == '1') {
+		BuscaData();
+	}
+	else{
+		g_form.addErrorMessage('Você não concordou com os termos deste documento.');
+	}
+}
+
+function DetailsLookup(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	alert(answer);
+	g_form.setValue('ca_numero', answer);
+	g_form.save();
+}
+
+function RetornaNumeracao(){
+	var ga = new GlideAjax('Gerar_NumeracaoDoc'); //name of script include
+	ga.addParam('sysparm_name', 'getNumeracao');
+	ga.getXML(DetailsLookup); 
+}
+
+function BuscaData(){
+	var ajax = new GlideAjax('Funcoes_Gerais');
+	ajax.addParam('sysparm_name','getNowDateTime');
+	ajax.getXML(SalvaDados);
+}
+
+
+function SalvaDados(response){
+	var auxData = response.responseXML.documentElement.getAttribute("answer");
+	var auxNome = g_user.firstName + " " + g_user.lastName;
+	var auxLog = "Solicitação criada por: " + auxNome + " em " + auxData;
+		
+	g_form.setValue('ca_log', auxLog);
+	g_form.setValue('ca_status', 1);
+	
+	if (g_form.getValue('ca_numero') == ''){
+		RetornaNumeracao();
+	} 
+	
+	g_form.submit();
+	g_form.addInfoMessage('Documento salvo');
+	
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>false</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-04 18:25:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6d8816ddb90001021d658b3ca9619af</sys_id>
+        <sys_mod_count>190</sys_mod_count>
+        <sys_name>Solicitar Crachá</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+        <sys_update_name>sys_ui_action_f6d8816ddb90001021d658b3ca9619af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-13 19:06:47</sys_updated_on>
+        <table>x_407528_crachas_siscracha_table</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

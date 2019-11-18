@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ca_chave" label="Chave:" language="en" table="x_407528_crachas_siscracha_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ca_chave</element>
+            <help/>
+            <hint/>
+            <label>Chave:</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <plural>Chave:s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-04 13:37:58</sys_created_on>
+            <sys_id>a2878025db10001021d658b3ca96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Chave:</sys_name>
+            <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+            <sys_update_name>sys_documentation_x_407528_crachas_siscracha_table_ca_chave_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-04 13:37:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

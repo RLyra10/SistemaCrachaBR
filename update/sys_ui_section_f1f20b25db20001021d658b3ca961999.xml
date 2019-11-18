@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Termo de Compromisso" section_id="f1f20b25db20001021d658b3ca961999" sys_domain="global" table="x_407528_crachas_siscracha_table" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-14 13:42:45</sys_created_on>
+            <sys_id>54d15beedb01001021d658b3ca9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-14 13:42:45</sys_updated_on>
+            <text>Reconheço que o crachá solicitado trata-se de minha identidade funcional e, portanto, de porte obrigatório nas dependências da Empresa, constituindo-se em documento pessoal e intransferível. Assim, responsabilizo-me por quaisquer danos a que vier dar causa pelo uso indevido, bem como, comprometo-me caso de extravio, comunicar, imediatamente, ao GSC/GSCOM.</text>
+            <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ca_termo_compromisso</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-14 13:42:45</sys_created_on>
+            <sys_id>18d15beedb01001021d658b3ca9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Termo de Compromisso" display_value="Termo de Compromisso" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">f1f20b25db20001021d658b3ca961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-14 13:42:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>54d15beedb01001021d658b3ca9619e4</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-14 13:42:45</sys_created_on>
+            <sys_id>98d15beedb01001021d658b3ca9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Termo de Compromisso" display_value="Termo de Compromisso" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">f1f20b25db20001021d658b3ca961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-14 13:42:45</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-14 13:42:45</sys_created_on>
+            <sys_id>1cd15beedb01001021d658b3ca9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Termo de Compromisso" display_value="Termo de Compromisso" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">f1f20b25db20001021d658b3ca961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-14 13:42:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ca_aprova_termo</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-14 13:42:45</sys_created_on>
+            <sys_id>9cd15beedb01001021d658b3ca9619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Termo de Compromisso" display_value="Termo de Compromisso" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">f1f20b25db20001021d658b3ca961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-14 13:42:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-14 13:42:45</sys_created_on>
+            <sys_id>10d15beedb01001021d658b3ca9619e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Termo de Compromisso" display_value="Termo de Compromisso" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">f1f20b25db20001021d658b3ca961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-14 13:42:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_by</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-14 13:42:45</sys_created_on>
+            <sys_id>90d15beedb01001021d658b3ca9619e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Termo de Compromisso" display_value="Termo de Compromisso" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">f1f20b25db20001021d658b3ca961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-14 13:42:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Termo de Compromisso</caption>
+            <header>false</header>
+            <name>x_407528_crachas_siscracha_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-17 13:32:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1f20b25db20001021d658b3ca961999</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Termo de Compromisso</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+            <sys_update_name>sys_ui_section_f1f20b25db20001021d658b3ca961999</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-14 13:41:28</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
