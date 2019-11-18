@@ -61,7 +61,6 @@
 
 function DetailsLookup(response) {
 	var answer = response.responseXML.documentElement.getAttribute("answer");
-	alert(answer);
 	g_form.setValue('ca_numero', answer);
 	g_form.save();
 }
@@ -93,7 +92,6 @@ function SalvaDados(response){
 	
 	g_form.submit();
 	g_form.addInfoMessage('Documento salvo');
-	
 }]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -105,7 +103,7 @@ function SalvaDados(response){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f6d8816ddb90001021d658b3ca9619af</sys_id>
-        <sys_mod_count>190</sys_mod_count>
+        <sys_mod_count>194</sys_mod_count>
         <sys_name>Solicitar Crachá</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
@@ -113,7 +111,7 @@ function SalvaDados(response){
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sys_ui_action_f6d8816ddb90001021d658b3ca9619af</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-13 19:06:47</sys_updated_on>
+        <sys_updated_on>2019-11-18 14:29:42</sys_updated_on>
         <table>x_407528_crachas_siscracha_table</table>
         <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
