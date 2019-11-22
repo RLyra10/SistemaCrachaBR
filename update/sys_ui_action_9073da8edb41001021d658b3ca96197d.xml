@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.ca_status != 3 &amp;&amp; current.ca_status &gt; 0 &amp;&amp; current.ca_status &lt; 9  &amp;&amp; current.ca_doc_ativo == 1</condition>
+        <condition>current.ca_status != 3  &amp;&amp; current.ca_status != 9 &amp;&amp;  current.ca_status &gt; 0 &amp;&amp; current.ca_status &lt; 16  &amp;&amp; current.ca_doc_ativo == 1</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -29,6 +29,8 @@
         <onclick>Reprovar()</onclick>
         <order>100</order>
         <script><![CDATA[function Reprovar(){
+	g_form.clearMessages();
+	
 	var ajax = new GlideAjax('Funcoes_Gerais');
 	ajax.addParam('sysparm_name','getNowDateTime');
 	ajax.getXML(SalvaDados);
@@ -38,13 +40,18 @@
 function SalvaDados(response){
 	var auxData = response.responseXML.documentElement.getAttribute("answer");
 	var auxNome =  g_user.firstName + " " + g_user.lastName;
-	var auxLog = "Solicitação aprovada por: " + auxNome + " em " + auxData;
+	var auxLog = "Solicitação reprovada por: " + auxNome + " em " + auxData;
+	g_form.setValue('ca_justificativa', auxLog);
 		
-	g_form.setValue('ca_log', g_form.getValue('ca_log') + '\n' + auxLog);
-	g_form.setValue('ca_status', 9);
-	g_form.submit();
-	g_form.addInfoMessage('Documento reprovado');
-		
+	JustificativaReprovar();
+}
+
+function JustificativaReprovar() {
+    var gm = new GlideModal('x_407528_crachas_Jusiticativa_Box');
+    gm.setTitle('Justificativa');
+    var title = gm.getPreference('title');
+    gm.setWidth(5500);
+    gm.render();
 }]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -56,7 +63,7 @@ function SalvaDados(response){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9073da8edb41001021d658b3ca96197d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Reprovar</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
@@ -64,7 +71,7 @@ function SalvaDados(response){
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sys_ui_action_9073da8edb41001021d658b3ca96197d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-14 13:43:47</sys_updated_on>
+        <sys_updated_on>2019-11-21 20:37:02</sys_updated_on>
         <table>x_407528_crachas_siscracha_table</table>
         <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

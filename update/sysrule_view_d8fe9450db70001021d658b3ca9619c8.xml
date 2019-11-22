@@ -29,8 +29,12 @@
 						if (view.indexOf('Lixeira Diaria') > -1) {
 							answer = 'lixeira_diaria';
 						}else{
-							answer = null;  // set the new view to answer
-//							gs.addInfoMessage('nulo');
+							if (view.indexOf('Por Numero') > -1) {
+							answer = 'por_numero';
+							}else{
+								answer = null;  // set the new view to answer
+	//							gs.addInfoMessage('nulo');
+							}
 						}
 					}
 				}
@@ -45,7 +49,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d8fe9450db70001021d658b3ca9619c8</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>RuleCracha</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
@@ -53,7 +57,7 @@
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sysrule_view_d8fe9450db70001021d658b3ca9619c8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-29 19:01:36</sys_updated_on>
+        <sys_updated_on>2019-11-21 14:04:01</sys_updated_on>
         <table>x_407528_crachas_siscracha_table</table>
         <view>Por Status</view>
     </sysrule_view>

@@ -10,7 +10,8 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Cargo:" max_length="40" name="ca_cargo" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Chave:" max_length="4" name="ca_chave" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Chave Gerente" max_length="40" name="ca_chave_gerente" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Chave Gerente" max_length="4" name="ca_chave_gerente" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Chave Substituto" max_length="4" name="ca_chave_substituto" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Data de Emissão:" max_length="40" name="ca_dataemissao" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="Documento Ativo" max_length="40" name="ca_doc_ativo" read_only="true" type="string">
             <choice>
@@ -18,10 +19,14 @@
                 <element inactive_on_update="false" label="Não" sequence="1" value="0"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="EMail Gerente" max_length="200" name="ca_email_gerente" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="EMail Solicitante" max_length="200" name="ca_email_solicitante" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="EMail Substituto" max_length="200" name="ca_email_substituto" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Função:" max_length="40" name="ca_funcao" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Gerência:" max_length="40" name="ca_gerencia" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Histórico:" max_length="200" name="ca_historico" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Identidade:" max_length="40" name="ca_identidade" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Justificativa" max_length="500" name="ca_justificativa" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Log" max_length="100000" name="ca_log" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Lotação:" max_length="40" name="ca_lotacao" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Matrícula:" max_length="40" name="ca_matricula" read_only="true" type="string"/>
@@ -47,9 +52,10 @@
             <choice>
                 <element inactive_on_update="false" label="Em Construção" sequence="0" value="0"/>
                 <element inactive_on_update="false" label="Nova Solicitação" sequence="1" value="1"/>
-                <element inactive_on_update="false" label="Em Emissão" sequence="2" value="2"/>
-                <element inactive_on_update="false" label="Entregue ao Empregado" sequence="3" value="3"/>
-                <element inactive_on_update="false" label="Reprovada" sequence="4" value="9"/>
+                <element inactive_on_update="false" label="Enviado para Cadastro" sequence="2" value="15"/>
+                <element inactive_on_update="false" label="Em Emissão" sequence="3" value="2"/>
+                <element inactive_on_update="false" label="Entregue ao Empregado" sequence="4" value="3"/>
+                <element inactive_on_update="false" label="Reprovada" sequence="5" value="9"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" default="TERMO DE COMPROMISSO" label="&gt;" max_length="40" name="ca_termo_compromisso" read_only="true" type="string"/>

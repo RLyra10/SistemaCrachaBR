@@ -40,9 +40,15 @@ function SalvaDados(response){
 	var auxLog = "Solicitação aprovada por: " + auxNome + " em " + auxData;
 		
 	g_form.setValue('ca_log', g_form.getValue('ca_log') + '\n' + auxLog);
-	g_form.setValue('ca_status', 2);
+	
+	if (g_form.getValue('ca_motivo', 2)){
+		g_form.setValue('ca_status', 15);
+	} else{
+		g_form.setValue('ca_status', 2);
+	}
+	
 	g_form.submit();
-	g_form.addInfoMessage('Documento aprovado');
+	g_form.addInfoMessage('Documento aprovado.');
 		
 }]]></script>
         <show_insert>false</show_insert>
@@ -55,7 +61,7 @@ function SalvaDados(response){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d2b057cdb60001021d658b3ca96195c</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name>Aprovar Gerente</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
@@ -63,7 +69,7 @@ function SalvaDados(response){
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sys_ui_action_7d2b057cdb60001021d658b3ca96195c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-14 16:59:33</sys_updated_on>
+        <sys_updated_on>2019-11-21 20:30:37</sys_updated_on>
         <table>x_407528_crachas_siscracha_table</table>
         <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

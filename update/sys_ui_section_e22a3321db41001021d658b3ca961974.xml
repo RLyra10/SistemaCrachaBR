@@ -1,44 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Campos Ocultos" section_id="e22a3321db41001021d658b3ca961974" sys_domain="global" table="x_407528_crachas_siscracha_table" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>ca_chave_gerente</element>
+            <element>ca_email_solicitante</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-14 13:42:46</sys_created_on>
-            <sys_id>98d15beedb01001021d658b3ca9619f6</sys_id>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>97a134c9db15001021d658b3ca961914</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-14 13:42:46</sys_updated_on>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ca_chave_gerente</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>1ba134c9db15001021d658b3ca961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ca_email_gerente</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>9ba134c9db15001021d658b3ca961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ca_chave_substituto</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>1fa134c9db15001021d658b3ca961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ca_email_substituto</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>9fa134c9db15001021d658b3ca961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-14 13:42:46</sys_created_on>
-            <sys_id>1cd15beedb01001021d658b3ca9619f6</sys_id>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>13a134c9db15001021d658b3ca961915</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-14 13:42:46</sys_updated_on>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>ca_doc_ativo</element>
-            <position>2</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-14 13:42:46</sys_created_on>
-            <sys_id>9cd15beedb01001021d658b3ca9619f6</sys_id>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>93a134c9db15001021d658b3ca961915</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-14 13:42:46</sys_updated_on>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ca_justificativa</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>17a134c9db15001021d658b3ca961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>97a134c9db15001021d658b3ca961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Campos Ocultos" display_value="Campos Ocultos" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">e22a3321db41001021d658b3ca961974</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

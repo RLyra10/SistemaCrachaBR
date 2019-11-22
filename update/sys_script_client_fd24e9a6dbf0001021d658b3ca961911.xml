@@ -26,35 +26,51 @@
 
 	ga.getXML(getResponse);
 	return;
+}
 
 function getResponse(response) {
 
 	var jsonObj = response.responseXML.documentElement.getAttribute('answer');
+	alert(jsonObj);
 	var obj = JSON.parse(jsonObj);
 	
+	if (obj.descricaoCargoPetrobrasR3 == null){
+		g_form.setValue('ca_cargo', obj.posicao);
+	} else{
+		g_form.setValue('ca_cargo', obj.descricaoCargoPetrobrasR3);
+	}
+		
 	g_form.setValue('ca_gerencia', obj.orgao.sigla);
-	g_form.setValue('ca_cargo', obj.descricaoCargoPetrobrasR3);
 	g_form.setValue('ca_matricula', obj.matricula);
 	g_form.setValue('ca_nome_completo', obj.nomeCompleto);
 	g_form.setValue('ca_lotacao', obj.hierarquiaCompleta);
-	g_form.setValue('ca_funcao', obj.descricaoCargoR3);
 	g_form.setValue('ca_nome_gerente', obj.nomeCompletoSuperior);
-	
+	g_form.setValue('ca_funcao', obj.descricaoCargoR3);
+		
 	var admissao = obj.ingresso;
 	admissao = admissao.split("T")[0];
 	admissao = admissao.split("-")[2] +'/'+ admissao.split("-")[1] +'/'+ admissao.split("-")[0];
 	g_form.setValue('ca_admissao', admissao);	
 	
 	// campos ocultos
+	g_form.setValue('ca_email_solicitante', obj.email);
 	g_form.setValue('ca_chave_gerente', obj.chaveSuperior);
+//	g_form.setValue('ca_email_gerente', obj.emailSuperior);
+//	g_form.setValue('ca_chave_substituto', obj.chaveSubstituto);
+//	g_form.setValue('ca_email_substituto', obj.emailSubstituto);
 	
-	
-	//var values = response.responseXML.documentElement.getAttribute('answer').toString().split('#');
-	
-//	g_form.setValue('ca_matricula', values[0]);
-//	g_form.setValue('ca_nome_completo', values[1]);
-	
+	TrataRegra_Motivo(obj.nomeCompleto);
 }
+
+function TrataRegra_Motivo(nomeCompleto){
+	
+	var auxNome = g_user.firstName + " " + g_user.lastName;
+	if (auxNome == nomeCompleto) {
+		g_form.setDisabled('ca_motivo', false);
+	} else {
+		g_form.setValue('ca_motivo', 2);
+		g_form.setDisabled('ca_motivo', true);
+	}
 	
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -63,7 +79,7 @@ function getResponse(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fd24e9a6dbf0001021d658b3ca961911</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>Chave OnChange</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
@@ -71,7 +87,7 @@ function getResponse(response) {
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sys_script_client_fd24e9a6dbf0001021d658b3ca961911</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-11 17:04:22</sys_updated_on>
+        <sys_updated_on>2019-11-21 22:07:02</sys_updated_on>
         <table>x_407528_crachas_siscracha_table</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

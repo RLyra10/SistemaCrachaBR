@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ca_email_solicitante" label="EMail Solicitante" language="en" table="x_407528_crachas_siscracha_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ca_email_solicitante</element>
+            <help/>
+            <hint/>
+            <label>EMail Solicitante</label>
+            <language>en</language>
+            <name>x_407528_crachas_siscracha_table</name>
+            <plural>EMail Solicitantes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-21 14:10:07</sys_created_on>
+            <sys_id>9d3b1fb4db51001021d658b3ca961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>EMail Solicitante</sys_name>
+            <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+            <sys_update_name>sys_documentation_x_407528_crachas_siscracha_table_ca_email_solicitante_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-21 14:10:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -4,41 +4,55 @@
             <element>ca_nome_gerente</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-01 13:31:36</sys_created_on>
-            <sys_id>5a921c26db30001021d658b3ca9619a4</sys_id>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>dfa134c9db15001021d658b3ca961908</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovadores" display_value="Aprovadores" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">31cffb06dbb0001021d658b3ca96196d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-01 13:31:36</sys_updated_on>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_by</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>53a134c9db15001021d658b3ca961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Aprovadores" display_value="Aprovadores" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">31cffb06dbb0001021d658b3ca96196d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-01 13:31:36</sys_created_on>
-            <sys_id>da921c26db30001021d658b3ca9619a4</sys_id>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>d3a134c9db15001021d658b3ca961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovadores" display_value="Aprovadores" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">31cffb06dbb0001021d658b3ca96196d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-01 13:31:36</sys_updated_on>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>ca_nome_substituto</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-01 13:31:36</sys_created_on>
-            <sys_id>5e921c26db30001021d658b3ca9619a4</sys_id>
+            <sys_created_on>2019-11-21 20:27:54</sys_created_on>
+            <sys_id>57a134c9db15001021d658b3ca961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovadores" display_value="Aprovadores" name="x_407528_crachas_siscracha_table" sys_domain="global" view="Default view">31cffb06dbb0001021d658b3ca96196d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-01 13:31:36</sys_updated_on>
+            <sys_updated_on>2019-11-21 20:27:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
