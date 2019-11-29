@@ -31,7 +31,7 @@
 function getResponse(response) {
 
 	var jsonObj = response.responseXML.documentElement.getAttribute('answer');
-	alert(jsonObj);
+	
 	var obj = JSON.parse(jsonObj);
 	
 	if (obj.descricaoCargoPetrobrasR3 == null){
@@ -79,7 +79,7 @@ function TrataRegra_Motivo(nomeCompleto){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fd24e9a6dbf0001021d658b3ca961911</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name>Chave OnChange</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
@@ -87,7 +87,7 @@ function TrataRegra_Motivo(nomeCompleto){
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sys_script_client_fd24e9a6dbf0001021d658b3ca961911</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-21 22:07:02</sys_updated_on>
+        <sys_updated_on>2019-11-26 14:18:56</sys_updated_on>
         <table>x_407528_crachas_siscracha_table</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

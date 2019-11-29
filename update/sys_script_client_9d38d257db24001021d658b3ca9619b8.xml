@@ -40,6 +40,10 @@ function desabilitaCampos() {
 		g_form.setDisabled('ca_ramal', true);
 		g_form.setDisabled('ca_sad', true);
 		g_form.setDisabled('ca_aprova_termo', true);
+		g_form.setDisabled('ca_identidade', true);
+		g_form.setDisabled('ca_orgaoemissor', true);
+		g_form.setDisabled('ca_dataemissao', true);
+		g_form.setDisabled('ca_ufidentidade', true);
 	}
 	
 	var sections = g_form.getSections();  
@@ -51,7 +55,7 @@ function desabilitaCampos() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d38d257db24001021d658b3ca9619b8</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Cracha OnLoad</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
@@ -59,7 +63,7 @@ function desabilitaCampos() {
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sys_script_client_9d38d257db24001021d658b3ca9619b8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-11 16:20:06</sys_updated_on>
+        <sys_updated_on>2019-11-22 16:43:45</sys_updated_on>
         <table>x_407528_crachas_siscracha_table</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

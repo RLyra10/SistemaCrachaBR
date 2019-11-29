@@ -38,7 +38,7 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p>Prezado(a),</p>
-<p>O usu&aacute;rio <strong>${ca_nome_completo}</strong>&nbsp;realizou um pedido de crach&aacute;.</p>
+<p><strong>${ca_nome_completo}</strong>&nbsp;realizou um pedido de crach&aacute;.</p>
 <p>Chave: <strong>${ca_chave}</strong></p>
 <p>N&uacute;mero do pedido: <strong>${ca_numero}</strong></p>
 <p>Motivo: <strong>${ca_motivo}</strong></p>
@@ -65,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>10512c01db15001021d658b3ca96194c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Notifica Gerente</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
@@ -73,7 +73,7 @@
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sysevent_email_action_10512c01db15001021d658b3ca96194c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-21 19:33:15</sys_updated_on>
+        <sys_updated_on>2019-11-26 14:23:17</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

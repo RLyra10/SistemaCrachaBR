@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_source">
+    <sys_report_source action="INSERT_OR_UPDATE">
+        <description/>
+        <display>Por Status Donuts (Sistema de Crachás Table)</display>
+        <filter table="x_407528_crachas_siscracha_table">ca_doc_ativo=1<item endquery="false" field="ca_doc_ativo" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        </filter>
+        <name>Por Status Donuts</name>
+        <sys_class_name>sys_report_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-26 16:49:16</sys_created_on>
+        <sys_id>952f656adb51001021d658b3ca9619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Por Status Donuts (Sistema de Crachás Table)</sys_name>
+        <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
+        <sys_update_name>sys_report_source_952f656adb51001021d658b3ca9619f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-26 16:49:16</sys_updated_on>
+        <table>x_407528_crachas_siscracha_table</table>
+    </sys_report_source>
+</record_update>
