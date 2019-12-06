@@ -37,7 +37,7 @@
         <description/>
         <direction>minimize</direction>
         <display_column_lines>false</display_column_lines>
-        <display_grid>true</display_grid>
+        <display_grid>false</display_grid>
         <display_row_lines>false</display_row_lines>
         <donut_width_percent>42</donut_width_percent>
         <end_time/>
@@ -84,13 +84,13 @@
         <series_name_text/>
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
-        <show_chart_data_label>true</show_chart_data_label>
+        <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
         <show_data_label_position_middle>false</show_data_label_position_middle>
         <show_empty>false</show_empty>
         <show_geographical_label>false</show_geographical_label>
-        <show_legend>false</show_legend>
+        <show_legend>true</show_legend>
         <show_legend_border>false</show_legend_border>
         <show_marker>false</show_marker>
         <show_zero>false</show_zero>
@@ -102,14 +102,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-11-26 16:18:07</sys_created_on>
         <sys_id>c978a9a2db51001021d658b3ca9619f3</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Relatório Por Status</sys_name>
         <sys_package display_value="Sistema de Crachás" source="x_407528_crachas">1f954861db10001021d658b3ca961903</sys_package>
         <sys_policy/>
         <sys_scope display_value="Sistema de Crachás">1f954861db10001021d658b3ca961903</sys_scope>
         <sys_update_name>sys_report_c978a9a2db51001021d658b3ca9619f3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-26 18:55:45</sys_updated_on>
+        <sys_updated_on>2019-11-29 17:42:51</sys_updated_on>
         <table>x_407528_crachas_siscracha_table</table>
         <title>Relatório Por Status</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
